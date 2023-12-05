@@ -12,6 +12,6 @@ pattern = r'href="([^"]+\.\w+)"'
 matches = re.findall(pattern, html)
 
 #
-print("Имена файлов, указанные в ссылках на другие документы:")
+print("Имена файлов, указанные в ссылках на другие документы: ")
 for match in matches:
     print(match)
