@@ -6,7 +6,7 @@ response = requests.get(url)
 html = response.text
 
 
-pattern = r'href="([^"]+\.\w+)"'
+pattern = r'(href|src)="([^"]+\.\w+)"'
 
 
 matches = re.findall(pattern, html)
